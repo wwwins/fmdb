@@ -420,6 +420,14 @@ If you don't, you're going to be in a world of hurt when you try and use the dat
 
 - (BOOL)columnIsNull:(NSString*)columnName;
 
+/** Returns a dictionary of the row results mapped to case sensitive keys of the column names.
+ 
+ @returns `NSDictionary` of the row results.
+ 
+ @warning The keys to the dictionary are case sensitive of the column names.
+ */
+
+- (NSDictionary*)resultDictionaryWithTableName:(NSString*)tabelName;
 
 /** Returns a dictionary of the row results mapped to case sensitive keys of the column names. 
  
